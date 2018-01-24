@@ -1,6 +1,6 @@
 {
   "name": "gulp-awspublish-redirects",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Define redirects for gulp-awspublish.",
   "main": "index.js",
   "scripts": {
