@@ -2,6 +2,7 @@
 
 const from = require('from2');
 const File = require('vinyl');
+const toThrough = require('to-through');
 
 module.exports = function(redirects) {
 	const entries = Object.entries(redirects).map(([path, location]) => new File({
@@ -15,5 +16,7 @@ module.exports = function(redirects) {
 		},
 	}));
 
-	return from.obj((size, next) => next(null, entries.shift() || null));
+	const stream = from.obj((size, next) => next(null, entries.shift() || null));
+
+	return toThrough(stream);
 };
