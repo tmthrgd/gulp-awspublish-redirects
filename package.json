@@ -1,0 +1,33 @@
+{
+  "name": "gulp-awspublish-redirects",
+  "version": "0.0.0",
+  "description": "Define redirects for gulp-awspublish.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmthrgd/gulp-awspublish-redirects.git"
+  },
+  "keywords": [
+    "gulp-awspublish",
+    "http",
+    "redirect",
+    "aws",
+    "s3"
+  ],
+  "author": "Tom Thorogood (https://tomthorogood.co.uk)",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/tmthrgd/gulp-awspublish-redirects/issues"
+  },
+  "homepage": "https://github.com/tmthrgd/gulp-awspublish-redirects#readme",
+  "dependencies": {
+    "from2": "^2.3.0",
+    "vinyl": "^2.1.0"
+  },
+  "peerDependencies": {
+    "gulp-awspublish": "~3"
+  }
+}
